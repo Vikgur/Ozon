@@ -4,7 +4,6 @@ sys.path.append(sys.path[0] + "/..")
 import os
 import pickle
 from imports_options import *
-from scrolls import *
 from Page_Elements.CartPageProducts import CartPageTwoProducts
 from Locators.locators import CartPageTwoProductLocators
 from main_detail_cart import MainDetailCart

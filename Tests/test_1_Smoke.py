@@ -2,7 +2,7 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from scrolls import *
+from scrolls import Scrolls
 from Page_Elements.MainPage import MainPage
 from Page_Elements.DetailPage import DetailPageBuyOneClick
 from Page_Elements.AuthorisationPage import AuthorisationPage
@@ -11,7 +11,7 @@ from Page_Elements.AuthorisationPage import AuthorisationPage
 # Создать функцию проверки открытия страницы авторизации.
 def authorisation_page_check():
     
-    # Создать локатор айфрейма.
+    # Создать локатор текущего айфрейма.
     FIELD_IFRAME_LOCATOR = ("xpath", "//iframe[@id='authFrame']")
 
     # Переключить драйвер на айфрейм авторизации.

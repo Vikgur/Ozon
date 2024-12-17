@@ -4,7 +4,7 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from scrolls import *
+from scrolls import Scrolls
 from Page_Elements.MainPage import MainPage
 from Page_Elements.DetailPage import DetailPageProduct
 from Page_Elements.CatalogPageCleaner import CatalogPageCleaner
