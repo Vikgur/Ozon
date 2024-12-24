@@ -1,0 +1,20 @@
+# Скачать venv в папку myvenv
+python3 -m venv myvenv
+
+# Активировать venv
+source myvenv/bin/activate
+
+# Установить Selenium
+pip install selenium
+или
+pip3 install selenium
+
+# Установить WebDriver_manager
+pip install webdriver_manager
+
+# Установить Requests
+pip install requests
+
+
+
+
