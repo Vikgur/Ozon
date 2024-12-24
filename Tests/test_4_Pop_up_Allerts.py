@@ -2,8 +2,8 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from Page_Elements.Allerts import Allerts
-from Locators.locators import AllertsLocators
+from page_elements.Allerts import Allerts
+from locators.locators import AllertsLocators
 
 # Создать переменную начала выполнения кода.
 start_time = time.time()

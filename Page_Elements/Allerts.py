@@ -1,6 +1,6 @@
 # Всплывающие pop-up уведомления.
 
-from Locators.locators import AllertsLocators
+from locators.locators import AllertsLocators
 
 
 class Allerts(object):

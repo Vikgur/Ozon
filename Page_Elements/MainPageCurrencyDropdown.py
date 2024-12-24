@@ -1,6 +1,6 @@
 # Выпадающий список модального неблокирующего окна "Валюта".
 
-from Locators.locators import MainPageCurrencyDropdownLocators
+from locators.locators import MainPageCurrencyDropdownLocators
 
 
 class MainPageСurrencyDropdown(object):

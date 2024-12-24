@@ -1,6 +1,6 @@
 # Каталог, поисковой запрос "пылесос".
 
-from Locators.locators import CatalogPageCleanerLocators
+from locators.locators import CatalogPageCleanerLocators
 
 
 class CatalogPageCleaner(object):

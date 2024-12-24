@@ -2,9 +2,9 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from scrolls import *
-from Page_Elements.MainPage import MainPage
-from Page_Elements.DetailPage import DetailPageInDemand
+from scrolls import Scrolls
+from page_elements.MainPage import MainPage
+from page_elements.DetailPage import DetailPageInDemand
 
 # Тест-сессия:
 # с главной страницы добавить товары

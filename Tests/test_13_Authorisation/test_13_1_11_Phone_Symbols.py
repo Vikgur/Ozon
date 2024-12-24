@@ -1,6 +1,6 @@
 # Импортировать опции драйвера и открыть окно авторизации.
 from auth_window_imports_options import *
-from Tests.test_13_Authorisation.test_13_1_5_Phone_Empty_Field import valid_empty_steps
+from tests.test_13_authorisation.test_13_1_5_phone_empty_field import valid_empty_steps
 
 # Ввести "< > * ! @ # $ % & /" в поле ввода номера телефона.
 authorisation_window.PHONE_INPUT_FIELD.send_keys("< > * ! @ # $ % & /")

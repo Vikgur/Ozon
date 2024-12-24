@@ -2,8 +2,7 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from scrolls import Scrolls
-from Page_Elements.CartPageProducts import CartPageTwoProducts
+from page_elements.CartPageProducts import CartPageTwoProducts
 from main_detail_cart import MainDetailCart
 
 # Создать переменную начала выполнения кода.

@@ -3,9 +3,9 @@ import sys
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 from scrolls import Scrolls
-from Page_Elements.MainPageBottom import MainPageBottom
-from Page_Elements.Allerts import Allerts
-from Locators.locators import AccessibilityPageLocators
+from page_elements.MainPageBottom import MainPageBottom
+from page_elements.Allerts import Allerts
+from locators.locators import AccessibilityPageLocators
 
 # Создать переменную начала выполнения кода.
 start_time = time.time()

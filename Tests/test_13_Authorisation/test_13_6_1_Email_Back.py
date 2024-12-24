@@ -1,7 +1,7 @@
 # Импортировать опции драйвера и открыть окно авторизации.
 from auth_window_imports_options import *
-from Page_Elements.AuthorisationPage import AuthorisationPage
-from Page_Elements.MainPageAuthorisationEmailWindow import (
+from page_elements.AuthorisationPage import AuthorisationPage
+from page_elements.MainPageAuthorisationEmailWindow import (
     MainPageAuthorisationEmailWindow,
 )
 

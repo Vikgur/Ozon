@@ -2,9 +2,9 @@ import sys
 
 sys.path.append(sys.path[0] + "/../..")
 from imports_options import *
-from Page_Elements.OzonTravel import OzonTravel
-from Page_Elements.OzonTravelDates import OzonTravelDates
-from Page_Elements.OzonTravelPassengers import OzonTravelPassengers
+from page_elements.OzonTravel import OzonTravel
+from page_elements.OzonTravelDates import OzonTravelDates
+from page_elements.OzonTravelPassengers import OzonTravelPassengers
 
 # Создать функцию заполнения всех полей.
 def positive_fill():

@@ -1,6 +1,6 @@
 # Модальное неблокирующее окно "Валюта".
 
-from Locators.locators import MainPageCurrencyLocators
+from locators.locators import MainPageCurrencyLocators
 
 
 class MainPageСurrency(object):

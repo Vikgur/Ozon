@@ -1,6 +1,6 @@
 # Импортировать опции драйвера и открыть окно авторизации.
 from auth_window_imports_options import *
-from Tests.test_13_Authorisation import validate_phone_field
+from tests.test_13_authorisation import validate_phone_field
 
 
 # Создать функцию работы поля с валидным ошибочным

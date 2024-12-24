@@ -1,6 +1,6 @@
 # Страница авторизации.
 
-from Locators.locators import AuthorisationPageLocators
+from locators.locators import AuthorisationPageLocators
 
 
 class AuthorisationPage(object):

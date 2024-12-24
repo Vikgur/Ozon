@@ -1,6 +1,6 @@
 # Страница деталировки товара.
 
-from Locators.locators import (
+from locators.locators import (
     DetailPageLocators,
     DetailPageBuyOneClickLocators,
     DetailPageInDemandLocators,

@@ -1,6 +1,6 @@
 # Главная страница Ozon Travel выбор "Даты".
 
-from Locators.locators import OzonTravelDatesLocators
+from locators.locators import OzonTravelDatesLocators
 
 
 class OzonTravelDates(object):

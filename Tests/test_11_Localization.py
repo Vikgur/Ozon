@@ -2,11 +2,11 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from Page_Elements.MainPage import MainPage
-from Page_Elements.Allerts import Allerts
-from Page_Elements.MainPageCurrency import MainPageСurrency
-from Page_Elements.MainPageCurrencyDropdown import MainPageСurrencyDropdown
-from Locators.locators import MainPageCurrencyLocators, MainPageCurrencyDropdownLocators
+from page_elements.MainPage import MainPage
+from page_elements.Allerts import Allerts
+from page_elements.MainPageCurrency import MainPageСurrency
+from page_elements.MainPageCurrencyDropdown import MainPageСurrencyDropdown
+from locators.locators import MainPageCurrencyLocators, MainPageCurrencyDropdownLocators
 
 # Создать переменную начала выполнения кода.
 start_time = time.time()

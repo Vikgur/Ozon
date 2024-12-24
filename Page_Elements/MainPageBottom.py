@@ -1,6 +1,6 @@
 # Подвал.
 
-from Locators.locators import MainPageBottomLocators
+from locators.locators import MainPageBottomLocators
 
 
 class MainPageBottom(object):

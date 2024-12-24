@@ -1,6 +1,6 @@
 # Импортировать опции драйвера и открыть окно авторизации.
 from auth_window_imports_options import *
-from Tests.test_13_Authorisation.test_13_1_1_Phone_Valid_Phone import valid_steps
+from tests.test_13_authorisation.test_13_1_1_phone_valid_phone import valid_steps
 
 # Ввести цифру -9999999999 в поле ввода номера телефона.
 authorisation_window.PHONE_INPUT_FIELD.send_keys(-9999999999)

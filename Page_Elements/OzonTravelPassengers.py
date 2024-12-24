@@ -1,6 +1,6 @@
 # Главная страница Ozon Travel выбор "Пассажиры и класс".
 
-from Locators.locators import OzonTravelPassengersLocators
+from locators.locators import OzonTravelPassengersLocators
 
 
 class OzonTravelPassengers(object):

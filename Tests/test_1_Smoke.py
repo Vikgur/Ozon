@@ -3,18 +3,18 @@ import sys
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 from scrolls import Scrolls
-from Page_Elements.MainPage import MainPage
-from Page_Elements.DetailPage import DetailPageBuyOneClick
-from Page_Elements.AuthorisationPage import AuthorisationPage
+from page_elements.MainPage import MainPage
+from page_elements.DetailPage import DetailPageBuyOneClick
+from page_elements.AuthorisationPage import AuthorisationPage
 
 
 # Создать функцию проверки открытия страницы авторизации.
 def authorisation_page_check():
-    
-    # Создать локатор текущего айфрейма.
+
+    # Создать локатор айфрейма.
     FIELD_IFRAME_LOCATOR = ("xpath", "//iframe[@id='authFrame']")
 
-    # Переключить драйвер на айфрейм авторизации.
+    # Переключить драйвер на айфрейм.
     driver.switch_to.frame("authFrame")
 
     # После перехода на страницу авторизации
@@ -35,7 +35,7 @@ def authorisation_page_check():
 
 # Выполнить Smoke.
 if __name__ == "__main__":
-    
+
     # Создать переменную начала выполнения кода.
     start_time = time.time()
 
@@ -77,11 +77,11 @@ if __name__ == "__main__":
 
     # Проверить переход на страницу авторизации.
     authorisation_page_check()
-    
+
     driver.quit()
-    
+
     print("ТЕСТ ПРОЙДЕН УСПЕШНО!")
-    
+
     # Через print вывести время, за которое тест был выполнен.
     # Результат округлить до сотых.
     print("Тест выполнен за %s секунд" % round((time.time() - start_time), 2))

@@ -1,6 +1,6 @@
 # Главная страница выпадающего списка иконки "Лицо".
 
-from Locators.locators import MainPageFaceIconLocators
+from locators.locators import MainPageFaceIconLocators
 
 
 class MainPageFaceIcon(object):

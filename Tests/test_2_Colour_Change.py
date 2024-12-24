@@ -2,7 +2,7 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from Page_Elements.MainPage import MainPage
+from page_elements.MainPage import MainPage
 
 # Создать переменную начала выполнения кода.
 start_time = time.time()

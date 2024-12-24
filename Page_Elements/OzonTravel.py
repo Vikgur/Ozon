@@ -1,6 +1,6 @@
 # Главная страница Ozon Travel.
 
-from Locators.locators import OzonTravelLocators
+from locators.locators import OzonTravelLocators
 
 
 class OzonTravel(object):

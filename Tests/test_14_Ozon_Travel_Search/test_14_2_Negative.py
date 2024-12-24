@@ -2,8 +2,8 @@ import sys
 
 sys.path.append(sys.path[0] + "/../..")
 from imports_options import *
-from Page_Elements.OzonTravel import OzonTravel
-from test_14_1_Positive import positive_fill
+from page_elements.OzonTravel import OzonTravel
+from test_14_1_positive import positive_fill
 
 # Создать переменную начала выполнения кода.
 start_time = time.time()

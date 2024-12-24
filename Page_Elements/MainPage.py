@@ -1,6 +1,6 @@
 # Главная страница.
 
-from Locators.locators import MainPageLocators
+from locators.locators import MainPageLocators
 
 
 class MainPage(object):

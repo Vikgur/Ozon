@@ -2,12 +2,12 @@ import sys
 
 sys.path.append(sys.path[0] + "/../..")
 from imports_options import *
-from Page_Elements.MainPageAuthorisationIcon import MainPageAuthorisationIcon
-from Page_Elements.MainPageAuthorisationWindow import (
+from page_elements.MainPageAuthorisationIcon import MainPageAuthorisationIcon
+from page_elements.MainPageAuthorisationWindow import (
     MainPageAuthorisationWindow,
     MainPageAuthorisationWindowLocators,
 )
-from Tests.test_1_Smoke import authorisation_page_check
+from tests.test_1_smoke import authorisation_page_check
 
 # Создать переменную начала выполнения кода.
 start_time = time.time()

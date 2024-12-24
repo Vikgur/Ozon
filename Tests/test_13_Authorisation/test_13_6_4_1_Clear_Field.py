@@ -1,10 +1,10 @@
 # Импортировать опции драйвера, открыть окно авторизации,
 # открыть окно "Войдите по почте".
 from auth_window_imports_options import *
-from Page_Elements.MainPageAuthorisationEmailWindow import (
+from page_elements.MainPageAuthorisationEmailWindow import (
     MainPageAuthorisationEmailWindow,
 )
-from Tests.test_13_Authorisation.test_13_6_1_Email_Back import email_window_check
+from tests.test_13_authorisation.test_13_6_1_email_back import email_window_check
 
 # Открыть окно "Войдите по почте".
 email_window_check()

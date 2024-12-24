@@ -1,6 +1,6 @@
 # Окно авторизации.
 
-from Locators.locators import MainPageAuthorisationWindowLocators
+from locators.locators import MainPageAuthorisationWindowLocators
 
 
 class MainPageAuthorisationWindow(object):

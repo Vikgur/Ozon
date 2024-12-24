@@ -1,6 +1,6 @@
 # Иконка авторизации "Лицо" главной страницы в шапке.
 
-from Locators.locators import MainPageAuthorisationIconLocators
+from locators.locators import MainPageAuthorisationIconLocators
 
 
 class MainPageAuthorisationIcon(object):

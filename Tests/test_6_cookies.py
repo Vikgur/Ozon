@@ -4,8 +4,8 @@ sys.path.append(sys.path[0] + "/..")
 import os
 import pickle
 from imports_options import *
-from Page_Elements.CartPageProducts import CartPageTwoProducts
-from Locators.locators import CartPageTwoProductLocators
+from page_elements.CartPageProducts import CartPageTwoProducts
+from locators.locators import CartPageTwoProductLocators
 from main_detail_cart import MainDetailCart
 
 # Создать переменную начала выполнения кода.

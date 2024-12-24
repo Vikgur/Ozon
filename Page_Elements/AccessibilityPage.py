@@ -1,6 +1,6 @@
 # Страница для слабовидящих.
 
-from Locators.locators import AccessibilityPageLocators
+from locators.locators import AccessibilityPageLocators
 
 
 class MainPageFaceIcon(object):

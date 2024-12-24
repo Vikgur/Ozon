@@ -2,10 +2,10 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from Page_Elements.MainPage import MainPage
-from Page_Elements.MainPageFaceIcon import MainPageFaceIcon
-from Page_Elements.Allerts import Allerts
-from Locators.locators import MainPageFaceIconLocators
+from page_elements.MainPage import MainPage
+from page_elements.MainPageFaceIcon import MainPageFaceIcon
+from page_elements.Allerts import Allerts
+from locators.locators import MainPageFaceIconLocators
 
 # Создать опеременную начала выполнения кода.
 start_time = time.time()

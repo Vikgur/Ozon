@@ -5,12 +5,12 @@ import sys
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 from scrolls import Scrolls
-from Page_Elements.MainPage import MainPage
-from Page_Elements.DetailPage import DetailPageProduct
-from Page_Elements.CatalogPageCleaner import CatalogPageCleaner
-from Page_Elements.CartPageProducts import CartPageOneProduct, CartPageDeleteConfirm
-from Locators.locators import CatalogPageCleanerLocators
-from Tests.test_1_Smoke import authorisation_page_check
+from page_elements.MainPage import MainPage
+from page_elements.DetailPage import DetailPageProduct
+from page_elements.CatalogPageCleaner import CatalogPageCleaner
+from page_elements.CartPageProducts import CartPageOneProduct, CartPageDeleteConfirm
+from locators.locators import CatalogPageCleanerLocators
+from tests.test_1_smoke import authorisation_page_check
 
 # Создать переменную начала выполнения кода.
 start_time = time.time()
