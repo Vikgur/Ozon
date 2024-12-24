@@ -1,0 +1,43 @@
+1. Для изоляции проекта установить venv
+python3 -m venv myvenv
+
+2. Активировать venv
+source myvenv/bin/activate
+
+3. Установить Selenium
+pip install selenium
+или
+pip3 install selenium
+
+4. Установить WebDriver_manager
+pip install webdriver_manager
+
+5. Установить Pytest
+pip install pytest
+
+6. Установить Requests
+pip install requests
+
+7. Установить для отчетов:
+  
+  7.1 pytest-html
+  pip install pytest-html
+  Для формирования отчета теста test_name.py в текущую директорию:
+  pytest test_name.py --html=report.html
+
+  7.2 allure-pytest
+  pip install allure-pytest
+  Для формирования отчета: запустить нужные тесты с маркером автоформирования отчета.
+  Путь до папки с отчетом необходимо указывать от корневой директории:
+  pytest --alluredir=/path/to/allure_results
+
+
+
+
+
+
+
+
+
+
+
