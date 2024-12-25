@@ -138,14 +138,6 @@ class AuthorisationPageLocators(object):
 # Локаторы всплывающих уведомлений.
 class AllertsLocators(object):
     ACCEPT_ALLERT_COOKIE_LOCATOR = ("xpath", "//button[normalize-space(.)='ОК']")
-    # SKIP_ALLERT_GEOLOCATION_LOCATOR = (
-    #     "xpath",
-    #     "//button[normalize-space(.)='Не сейчас']",
-    # )
-    # VISIBILITY_ALLERT_GEOLOCATION_LOCATOR = (
-    #     "xpath",
-    #     "//span[@class='tsBodyControl500Medium']",
-    # )
     VISIBILITY_ALLERT_COOKIE_LOCATOR = ("xpath", "//button[normalize-space(.)='ОК']")
 
 
