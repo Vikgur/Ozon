@@ -8,9 +8,6 @@ from page_elements.CartPageProducts import CartPageTwoProducts
 from locators.locators import CartPageTwoProductLocators
 from main_detail_cart import MainDetailCart
 
-# Создать переменную начала выполнения кода.
-start_time = time.time()
-
 # Создать объект для добавления с главной страницы
 # 2 товаров в корзину класса MainDetailCart.
 main_detail_cart = MainDetailCart()
@@ -98,7 +95,3 @@ else:
     print("Товаров в корзине нет :-(")
 
 driver.quit()
-
-# Через print вывести время, за которое тест был выполнен.
-# Результат округлить до сотых.
-print("Тест выполнен за %s секунд" % round((time.time() - start_time), 2))

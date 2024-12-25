@@ -7,9 +7,6 @@ from page_elements.MainPageBottom import MainPageBottom
 from page_elements.Allerts import Allerts
 from locators.locators import AccessibilityPageLocators
 
-# Создать переменную начала выполнения кода.
-start_time = time.time()
-
 # Создать объект класса ActionChains.
 action = ActionChains(driver)
 
@@ -58,10 +55,6 @@ if len(VISIBILITY_FONT_OPTIONS) > 0:
 else:
     print("Страница для слабовидящих не открылась :-(")
 
-driver.quit()
-
 print("ТЕСТ ПРОЙДЕН УСПЕШНО!")
 
-# Через print вывести время, за которое тест был выполнен.
-# Результат округлить до сотых.
-print("Тест выполнен за %s секунд" % round((time.time() - start_time), 2))
+driver.quit()

@@ -7,9 +7,6 @@ from page_elements.MainPageFaceIcon import MainPageFaceIcon
 from page_elements.Allerts import Allerts
 from locators.locators import MainPageFaceIconLocators
 
-# Создать опеременную начала выполнения кода.
-start_time = time.time()
-
 # Создать объект класса ActionChains.
 action = ActionChains(driver)
 
@@ -55,7 +52,3 @@ else:
     print("Выпадающий список не выпал :-(")
 
 driver.quit()
-
-# Через print вывести время, за которое тест был выполнен.
-# Результат округлить до сотых.
-print("Тест выполнен за %s секунд" % round((time.time() - start_time), 2))

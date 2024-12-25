@@ -4,9 +4,6 @@ sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 import os
 
-# Создать переменную начала выполнения кода.
-start_time = time.time()
-
 # Передать управление страницей драйверу.
 driver.get("https://www.ozon.ru/")
 time.sleep(5)
@@ -40,7 +37,3 @@ with open(
 driver.quit()
     
 print("ТЕСТ ПРОЙДЕН УСПЕШНО!")
-
-# Через print вывести время, за которое тест был выполнен.
-# Результат округлить до сотых.
-print("Тест выполнен за %s секунд" % round((time.time() - start_time), 2))

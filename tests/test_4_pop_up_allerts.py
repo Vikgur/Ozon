@@ -5,9 +5,6 @@ from imports_options import *
 from page_elements.Allerts import Allerts
 from locators.locators import AllertsLocators
 
-# Создать переменную начала выполнения кода.
-start_time = time.time()
-
 # Передать управление страницей драйверу.
 driver.get("https://www.ozon.ru/")
 time.sleep(5)
@@ -92,7 +89,3 @@ assert len(VISIBILITY_COOKIES_AFTER_CLICK) == 0, "Выпадающий спис�
 invisibility_check(VISIBILITY_COOKIES_AFTER_CLICK)
 
 driver.quit()
-
-# Через print вывести время, за которое тест был выполнен.
-# Результат округлить до сотых.
-print("Тест выполнен за %s секунд" % round((time.time() - start_time), 2))

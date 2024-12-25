@@ -18,18 +18,10 @@ pip install pytest
 6. Установить Requests
 pip install requests
 
-7. Установить для отчетов:
-  
-  7.1 pytest-html
-  pip install pytest-html
-  Для формирования отчета теста test_name.py в текущую директорию:
-  pytest test_name.py --html=report.html
-
-  7.2 allure-pytest
-  pip install allure-pytest
-  Для формирования отчета: запустить нужные тесты с маркером автоформирования отчета.
-  Путь до папки с отчетом необходимо указывать от корневой директории:
-  pytest --alluredir=/path/to/allure_results
+7. Установить для отчетов allure-pytest
+pip install allure-pytest
+Если система не видит allure, установить по инструкции:
+https://allurereport.org/docs/install/
 
 
 

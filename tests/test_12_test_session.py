@@ -12,9 +12,6 @@ from page_elements.CartPageProducts import CartPageOneProduct, CartPageDeleteCon
 from locators.locators import CatalogPageCleanerLocators
 from tests.test_1_smoke import authorisation_page_check
 
-# Создать переменную начала выполнения кода.
-start_time = time.time()
-
 # Создать объект класса ActionChains.
 action = ActionChains(driver)
 
@@ -367,7 +364,3 @@ authorisation_page_check()
 driver.quit()
 
 print("ТЕСТ ПРОЙДЕН УСПЕШНО!")
-
-# Через print вывести время, за которое тест был выполнен.
-# Результат округлить до сотых.
-print("Тест выполнен за %s секунд" % round((time.time() - start_time), 2))

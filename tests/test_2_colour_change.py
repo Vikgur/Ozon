@@ -4,9 +4,6 @@ sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 from page_elements.MainPage import MainPage
 
-# Создать переменную начала выполнения кода.
-start_time = time.time()
-
 # Создать объект класса ActionChains.
 action = ActionChains(driver)
 
@@ -64,7 +61,3 @@ else:
     print("Цвет остался прежним :-(")
 
 driver.quit()
-
-# Через print вывести время, за которое тест был выполнен.
-# Результат округлить до сотых.
-print("Тест выполнен за %s секунд" % round((time.time() - start_time), 2))
