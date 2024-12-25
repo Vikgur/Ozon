@@ -4,15 +4,14 @@ sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 import requests
 
+
 @allure.description(
     "Ожидаемый результат: получен промежуток времени в виде разницы, прошедший между отправкой запроса и получением ответа."
 )
 @allure.tag("Главная страница")
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-8", name="Тестирование производительности"
-)
+@allure.testcase("Ozon-8", name="Тестирование производительности")
 def test_page_load_time():
     # Создать переменную временной разницы между
     # отправкой запроса на url и получением ответа.

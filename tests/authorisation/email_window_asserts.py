@@ -1,13 +1,9 @@
 # Импортировать опции драйвера, открыть окно авторизации,
 # открыть окно "Войдите по почте".
 from tests.authorisation.test_auth_window_imports_options import *
-from page_elements.MainPageAuthorisationEmailWindow import (
-    MainPageAuthorisationEmailWindow,
-)
-from tests.authorisation.test_email_window_check import email_window_check
 
 
-class EmailWindow:
+class TestEmailWindow:
 
     # Создать функцию проверки возникновения ошибки "Не можем найти аккаунт
     # с этой почтой. Попробуйте ввести другую или войти по номеру телефона.".

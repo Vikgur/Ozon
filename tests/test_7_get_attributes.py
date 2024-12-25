@@ -4,15 +4,14 @@ sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 import os
 
+
 @allure.description(
     "Ожидаемый результат: в отдельную директорию сохранился файл с html-кодом текущей страницы."
 )
 @allure.tag("Главная страница")
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-7", name="Получение атрибутов страницы"
-)
+@allure.testcase("Ozon-7", name="Получение атрибутов страницы")
 def test_get_attributes():
     # Передать управление страницей драйверу.
     driver.get("https://www.ozon.ru/")

@@ -4,6 +4,7 @@ sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 from page_elements.MainPage import MainPage
 
+
 @allure.description(
     "Ожидаемый результат: при наведении на иконку «список заказов» цвет должен измениться."
 )
@@ -11,7 +12,8 @@ from page_elements.MainPage import MainPage
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(
-    "Ozon-2", name="Тестирование смены цвета иконки «список заказов» при наведении курсора"
+    "Ozon-2",
+    name="Тестирование смены цвета иконки «список заказов» при наведении курсора",
 )
 def test_colour_change():
     # Создать объект класса ActionChains.
@@ -31,15 +33,17 @@ def test_colour_change():
     # Создать переменную для целочисленного
     # определения цвета до наведения на элемент.
     colour_before = int(
-    "".join(
-        i for i in before_move_to_element.value_of_css_property("color") if i.isdigit()
-    )
+        "".join(
+            i
+            for i in before_move_to_element.value_of_css_property("color")
+            if i.isdigit()
+        )
     )
     time.sleep(2)
 
     # Через print вывести на экран цвет элемента до наведения мышки в rgba.
     print(
-    f'Цвет до наведения мышки: {before_move_to_element.value_of_css_property("color")}'
+        f'Цвет до наведения мышки: {before_move_to_element.value_of_css_property("color")}'
     )
 
     action.move_to_element(before_move_to_element).perform()
@@ -51,14 +55,16 @@ def test_colour_change():
     # Создать переменную для целочисленного
     # определения цвета после наведения мышки на элемент.
     colour_after = int(
-    "".join(
-        i for i in before_move_to_element.value_of_css_property("color") if i.isdigit()
-    )
+        "".join(
+            i
+            for i in before_move_to_element.value_of_css_property("color")
+            if i.isdigit()
+        )
     )
 
     # Через print вывести на экран цвет элемента до наведения мышки в rgba.
     print(
-    f'Цвет после наведения мышки: {after_move_to_element.value_of_css_property("color")}'
+        f'Цвет после наведения мышки: {after_move_to_element.value_of_css_property("color")}'
     )
 
     # Проверить через assert изменения цвета элемента после наведения мышки.

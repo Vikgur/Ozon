@@ -1,6 +1,10 @@
 # Страница корзины с товарами.
 
-from locators.locators import CartPageOneProductLocators, CartPageTwoProductLocators, CartPageDeleteConfirmLocators
+from locators.locators import (
+    CartPageOneProductLocators,
+    CartPageTwoProductLocators,
+    CartPageDeleteConfirmLocators,
+)
 
 
 # Одно наименование товара.

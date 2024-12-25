@@ -7,6 +7,7 @@ from page_elements.MainPageFaceIcon import MainPageFaceIcon
 from page_elements.Allerts import Allerts
 from locators.locators import MainPageFaceIconLocators
 
+
 @allure.description(
     "Ожидаемый результат: при наведение на «лицо» должен выпадать список кнопок: «Войти или зарегистрироваться» и «Личный кабинет». При клике на «Войти или зарегистрироваться» появляется модальное неблокирующее окно регистрации на текущей странице. При клике на «Личный кабинет» открывается страница личного кабинета."
 )
@@ -14,9 +15,7 @@ from locators.locators import MainPageFaceIconLocators
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.issue("Ozon-666", name="Не открывается страница авторизации")
-@allure.testcase(
-    "Ozon-5", name="Тестирование выпадающих списков элементов"
-)
+@allure.testcase("Ozon-5", name="Тестирование выпадающих списков элементов")
 def test_dropdown():
     # Создать объект класса ActionChains.
     action = ActionChains(driver)

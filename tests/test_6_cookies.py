@@ -8,15 +8,14 @@ from page_elements.CartPageProducts import CartPageTwoProducts
 from locators.locators import CartPageTwoProductLocators
 from main_detail_cart import MainDetailCart
 
+
 @allure.description(
     "Ожидаемый результат: после добавления двух разных наименований товаров в корзину и очистки куков товары пропадут из корзины, а после восстановления удаленных куков эти же товары в том же количестве вернутся в корзину."
 )
 @allure.tag("Главная страница", "Страница деталировки", "Страница корзины")
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-6", name="Тестирование работы cookies"
-)
+@allure.testcase("Ozon-6", name="Тестирование работы cookies")
 def test_cookies():
     # Создать объект для добавления с главной страницы
     # 2 товаров в корзину класса MainDetailCart.
@@ -34,7 +33,8 @@ def test_cookies():
 
     # Скачать все куки со страницы корзины в файл cookies.pkl в директорию test_cookies.
     pickle.dump(
-        driver.get_cookies(), open(os.getcwd() + "/Tests/test_cookies/cookies.pkl", "wb")
+        driver.get_cookies(),
+        open(os.getcwd() + "/Tests/test_cookies/cookies.pkl", "wb"),
     )
 
     # Удалить все куки.

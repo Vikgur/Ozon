@@ -16,7 +16,7 @@ from tests.authorisation import email_window_asserts
 # Создать функцию клика на кнопку "Войти" и проверки ошибки "Некорректный формат почты".
 def click_and_check():
     # Создать объект класса EmailWindow.
-    window = email_window_asserts.EmailWindow()
+    window = email_window_asserts.TestEmailWindow()
 
     # Создать объект окна "Войдите по почте"
     # класса MainPageAuthorisationEmailWindow.
@@ -40,12 +40,7 @@ def test_from_9_till_18():
 
     # ТЕСТ 13.6.4.9
     # Кликнуть на поле ввода и ввести данные.
-    (
-        action.click(email_window.INPUT_FIELD)
-        .pause(1)
-        .send_keys("w w@w.ww")
-        .perform()
-    )
+    (action.click(email_window.INPUT_FIELD).pause(1).send_keys("w w@w.ww").perform())
     time.sleep(1)
 
     # Кликнуть на "Войти" и проверить ошибку.

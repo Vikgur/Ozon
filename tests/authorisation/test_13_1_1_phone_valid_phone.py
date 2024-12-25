@@ -2,6 +2,7 @@
 from tests.authorisation.test_auth_window_imports_options import *
 from tests.authorisation import phone_field
 
+
 @allure.description(
     "Ожидаемый результат: поле отображает вводимые цифры и после клика на кнопку «Войти» открывается окно ожидания отправленного смс кода."
 )

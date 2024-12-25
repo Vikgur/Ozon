@@ -13,9 +13,7 @@ from tests.ozon_travel_search.test_filling_ticket_all_fields import (
 )
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-14.2", name="Негативный тест"
-)
+@allure.testcase("Ozon-14.2", name="Негативный тест")
 def test_negative():
     # Создать объект класса ActionChains.
     action = ActionChains(driver)

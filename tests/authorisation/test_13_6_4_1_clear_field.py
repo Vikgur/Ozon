@@ -25,10 +25,10 @@ def test_clear_field():
 
     # Кликнуть на поле ввода и ввести данные.
     (
-    action.click(email_window.INPUT_FIELD)
-    .pause(1)
-    .send_keys("йцукен23456789")
-    .perform()
+        action.click(email_window.INPUT_FIELD)
+        .pause(1)
+        .send_keys("йцукен23456789")
+        .perform()
     )
     time.sleep(2)
 
@@ -43,7 +43,9 @@ def test_clear_field():
     time.sleep(2)
 
     # Проверить через assert, что поле ввода пустое.
-    assert len(driver.find_elements(*CLEAR_FIELD_LOCATOR)) == 0, "Поле ввода не пустое :-("
+    assert (
+        len(driver.find_elements(*CLEAR_FIELD_LOCATOR)) == 0
+    ), "Поле ввода не пустое :-("
 
     # Проверить через print, что поле ввода пустое.
     if len(driver.find_elements(*CLEAR_FIELD_LOCATOR)) == 0:

@@ -3,17 +3,15 @@ import sys
 sys.path.append(sys.path[0] + "/../..")
 from imports_options import *
 from page_elements.OzonTravel import OzonTravel
-from tests.ozon_travel_search.test_filling_ticket_all_fields import filling_ticket_all_fields
-
-
-@allure.description(
-    "Ожидаемый результат: начнется поиск и отобразится результат."
+from tests.ozon_travel_search.test_filling_ticket_all_fields import (
+    filling_ticket_all_fields,
 )
+
+
+@allure.description("Ожидаемый результат: начнется поиск и отобразится результат.")
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-14.1", name="Позитивный тест"
-)
+@allure.testcase("Ozon-14.1", name="Позитивный тест")
 def test_positive():
     # Заполнить все поля.
     filling_ticket_all_fields()

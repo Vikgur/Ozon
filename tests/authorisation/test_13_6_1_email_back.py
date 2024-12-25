@@ -12,9 +12,7 @@ from tests.authorisation.test_email_window_check import email_window_check
 )
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-13.6.1", name="Тестирование кнопки «Вернуться на главный экран»"
-)
+@allure.testcase("Ozon-13.6.1", name="Тестирование кнопки «Вернуться на главный экран»")
 def test_email_back():
     # Открыть окно "Войдите по почте".
     email_window_check()

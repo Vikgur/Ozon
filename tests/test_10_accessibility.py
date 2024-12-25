@@ -7,15 +7,14 @@ from page_elements.MainPageBottom import MainPageBottom
 from page_elements.Allerts import Allerts
 from locators.locators import AccessibilityPageLocators
 
+
 @allure.description(
     "Ожидаемый результат: после клика на на кнопку «Для слабовидящих» происходит переход на страницу для слабовидящих."
 )
 @allure.tag("Главная страница", "Страница для слабовидящих")
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-10", name="Тестирование доступности"
-)
+@allure.testcase("Ozon-10", name="Тестирование доступности")
 def test_accessebility():
     # Создать объект класса ActionChains.
     action = ActionChains(driver)
@@ -57,7 +56,9 @@ def test_accessebility():
     )
 
     # Проверить через assert открытие страницы для слабовидящих.
-    assert len(VISIBILITY_FONT_OPTIONS) > 0, "Страница для слабовидящих не открылась :-("
+    assert (
+        len(VISIBILITY_FONT_OPTIONS) > 0
+    ), "Страница для слабовидящих не открылась :-("
 
     # Проверить через print открытие страницы для слабовидящих.
     if len(VISIBILITY_FONT_OPTIONS) > 0:

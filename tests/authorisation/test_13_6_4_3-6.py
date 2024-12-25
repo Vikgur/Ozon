@@ -8,11 +8,14 @@ from tests.authorisation.test_email_window_check import email_window_check
 from tests.authorisation import email_window_asserts
 
 
+@allure.description("Тесты: 13.6.4.3, 13.6.4.4, 13.6.4.5, 13.6.4.6")
+@allure.label("Автор тест-кейса", "Виктор Гурко")
+@allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 # Создать функцию клика на кнопку "Войти" и проверки ошибки "Не можем найти
 # аккаунт с этой почтой. Попробуйте ввести другую или войти по номеру телефона.".
 def click_and_check():
     # Создать объект класса EmailWindow.
-    window = email_window_asserts.EmailWindow()
+    window = email_window_asserts.TestEmailWindow()
 
     # Создать объект окна "Войдите по почте"
     # класса MainPageAuthorisationEmailWindow.
@@ -26,9 +29,7 @@ def click_and_check():
     window.error_check_empty_account()
 
 
-@allure.description(
-    "Тесты: 13.6.4.3, 13.6.4.4, 13.6.4.5, 13.6.4.6"
-)
+@allure.description("Тесты: 13.6.4.3, 13.6.4.4, 13.6.4.5, 13.6.4.6")
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 def test_from_3_till_6():
@@ -42,12 +43,7 @@ def test_from_3_till_6():
 
     # ТЕСТ 13.6.4.3
     # Кликнуть на поле ввода и ввести данные.
-    (
-        action.click(email_window.INPUT_FIELD)
-        .pause(1)
-        .send_keys("w_-1@w.ww")
-        .perform()
-    )
+    (action.click(email_window.INPUT_FIELD).pause(1).send_keys("w_-1@w.ww").perform())
     time.sleep(1)
 
     # Кликнуть на "Войти" и проверить ошибку.

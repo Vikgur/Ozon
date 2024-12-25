@@ -1,14 +1,13 @@
 # Импортировать опции драйвера и открыть окно авторизации.
 from tests.authorisation.test_auth_window_imports_options import *
 
+
 @allure.description(
     "Ожидаемый результат: при выборе кода страны «Соединенные штаты +1» происходит успешная смена кода на «+1»."
 )
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-13.2", name="Тестирование выпадающего списка кодов стран"
-)
+@allure.testcase("Ozon-13.2", name="Тестирование выпадающего списка кодов стран")
 def test_code_list():
     # Кликнуть на выпадающий список кодов.
     wait.until(EC.element_to_be_clickable(authorisation_window.CODE_LIST)).click()
@@ -43,4 +42,3 @@ def test_code_list():
     print("ТЕСТ ПРОЙДЕН УCПЕШНО!")
 
     driver.quit()
-

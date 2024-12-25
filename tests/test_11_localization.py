@@ -15,9 +15,7 @@ from locators.locators import MainPageCurrencyLocators, MainPageCurrencyDropdown
 @allure.tag("Главная страница")
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-11", name="Тестирование локализации"
-)
+@allure.testcase("Ozon-11", name="Тестирование локализации")
 def test_localization():
     # Создать объект класса ActionChains.
     action = ActionChains(driver)
@@ -58,7 +56,9 @@ def test_localization():
         print('Окно "Валюта" не открылось :-(')
 
     # Создать переменную для клика на выпадающий список.
-    DROPDOWN = driver.find_element(*MainPageCurrencyLocators.MAIN_CURRENCY_DROPDOWN_LOCATOR)
+    DROPDOWN = driver.find_element(
+        *MainPageCurrencyLocators.MAIN_CURRENCY_DROPDOWN_LOCATOR
+    )
 
     # Кликнуть на DROPDOWN.
     wait.until(EC.element_to_be_clickable(DROPDOWN)).click()
@@ -79,7 +79,9 @@ def test_localization():
     time.sleep(5)
 
     # Создать переменную для проверки переключения валюты на USD.
-    CONFIRM_USD = driver.find_element("xpath", "//button[@data-widget='selectedCurrency']")
+    CONFIRM_USD = driver.find_element(
+        "xpath", "//button[@data-widget='selectedCurrency']"
+    )
 
     # Проверить через assert, что переключение на USD произошло.
     assert CONFIRM_USD.text == "USD", "Валюта не USD :-("

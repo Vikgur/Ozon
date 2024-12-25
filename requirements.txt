@@ -23,13 +23,3 @@ pip install allure-pytest
 Если система не видит allure, установить по инструкции:
 https://allurereport.org/docs/install/
 
-
-
-
-
-
-
-
-
-
-

@@ -10,9 +10,7 @@ from tests.authorisation.test_cant_sign_in import cant_sign_in
 )
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-13.6.2", name="Тестирование кнопки «Не могу войти»"
-)
+@allure.testcase("Ozon-13.6.2", name="Тестирование кнопки «Не могу войти»")
 def test_cant_sign_in():
     # Открыть окно "Войдите по почте".
     email_window_check()

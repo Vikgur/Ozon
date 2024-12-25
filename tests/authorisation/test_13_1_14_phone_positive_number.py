@@ -2,6 +2,7 @@
 from tests.authorisation.test_auth_window_imports_options import *
 from tests.authorisation import phone_field
 
+
 @allure.description(
     "Ожидаемый результат: поле ввода отображает только цифру и не отображает плюс, после клика на кнопку «Войти» появляется ошибка «Некорректный формат телефона» и окно ожидания отправленного смс кода не открывается."
 )

@@ -1,14 +1,13 @@
 # Импортировать опции драйвера и открыть окно авторизации.
 from tests.authorisation.test_auth_window_imports_options import *
 
+
 @allure.description(
     "Ожидаемый результат: после клика на кнопку «Вход через Госуслуги» происходит переход на окно госуслуг."
 )
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-13.3", name="Тестирование входа через Госуслуги"
-)
+@allure.testcase("Ozon-13.3", name="Тестирование входа через Госуслуги")
 def test_gosuslugi():
     # Кликнуть на кнопку "Вход через Госуслуги".
     action.click(on_element=authorisation_window.GOSUSLUGI_BUTTON).perform()
