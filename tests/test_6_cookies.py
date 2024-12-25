@@ -12,7 +12,6 @@ from main_detail_cart import MainDetailCart
     "Ожидаемый результат: после добавления двух разных наименований товаров в корзину и очистки куков товары пропадут из корзины, а после восстановления удаленных куков эти же товары в том же количестве вернутся в корзину."
 )
 @allure.tag("Главная страница", "Страница деталировки", "Страница корзины")
-@allure.severity(allure.severity_level.NORMAL)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(

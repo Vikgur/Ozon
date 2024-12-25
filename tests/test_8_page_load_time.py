@@ -8,7 +8,6 @@ import requests
     "Ожидаемый результат: получен промежуток времени в виде разницы, прошедший между отправкой запроса и получением ответа."
 )
 @allure.tag("Главная страница")
-@allure.severity(allure.severity_level.MINOR)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(

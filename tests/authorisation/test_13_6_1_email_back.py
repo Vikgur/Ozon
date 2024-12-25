@@ -7,6 +7,14 @@ from page_elements.MainPageAuthorisationEmailWindow import (
 from tests.authorisation.test_email_window_check import email_window_check
 
 
+@allure.description(
+    "Ожидаемый результат: после клика на кнопку «Вернуться на главный экран» происходит переход на шаг назад на окно авторизации."
+)
+@allure.label("Автор тест-кейса", "Виктор Гурко")
+@allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
+@allure.testcase(
+    "Ozon-13.6.1", name="Тестирование кнопки «Вернуться на главный экран»"
+)
 def test_email_back():
     # Открыть окно "Войдите по почте".
     email_window_check()

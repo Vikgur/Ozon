@@ -7,6 +7,14 @@ from page_elements.MainPageAuthorisationEmailWindow import (
 from tests.authorisation.test_email_window_check import email_window_check
 
 
+@allure.description(
+    "Ожидаемый результат: после введения валидного емейла зарегистрированного пользователя в поле ввода почты и клика на кнопку «Войти» открывается окно «Введите код» отправки смс. "
+)
+@allure.label("Автор тест-кейса", "Виктор Гурко")
+@allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
+@allure.testcase(
+    "Ozon-13.6.4.2", name="Ввести валидный емейл зарегистрированного пользователя"
+)
 def test_exist_user():
     # Открыть окно "Войдите по почте".
     email_window_check()

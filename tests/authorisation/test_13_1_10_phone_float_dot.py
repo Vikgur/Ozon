@@ -2,7 +2,14 @@
 from tests.authorisation.test_auth_window_imports_options import *
 from tests.authorisation import phone_field
 
-
+@allure.description(
+    "Ожидаемый результат: поле ввода отображает только цифры и не отображает точку, после клика на кнопку «Войти» появляется ошибка «Некорректный формат телефона» и окно ожидания отправленного смс кода не открывается."
+)
+@allure.label("Автор тест-кейса", "Виктор Гурко")
+@allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
+@allure.testcase(
+    "Ozon-13.1.10", name="Ввести цифру с плавающей точкой «9.999999999»"
+)
 def test_float_dot():
     # Создать объект класса PhoneField.
     field = phone_field.PhoneField()

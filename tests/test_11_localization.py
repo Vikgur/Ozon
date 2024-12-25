@@ -13,7 +13,6 @@ from locators.locators import MainPageCurrencyLocators, MainPageCurrencyDropdown
     "Ожидаемый результат: после клика на кнопку «RUB» открывается окно с выбором валют, и после выбора «Доллар США» валюта изменяется."
 )
 @allure.tag("Главная страница")
-@allure.severity(allure.severity_level.NORMAL)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(

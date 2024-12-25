@@ -9,7 +9,6 @@ from locators.locators import AllertsLocators
     "Ожидаемый результат: уведомление о Куках появилось и после клика на кнопку «ОК» скрылось."
 )
 @allure.tag("Главная страница")
-@allure.severity(allure.severity_level.NORMAL)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(

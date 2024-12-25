@@ -8,7 +8,6 @@ from page_elements.MainPage import MainPage
     "Ожидаемый результат: при наведении на иконку «список заказов» цвет должен измениться."
 )
 @allure.tag("Главная страница")
-@allure.severity(allure.severity_level.TRIVIAL)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(

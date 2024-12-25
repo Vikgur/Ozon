@@ -11,7 +11,6 @@ from locators.locators import AccessibilityPageLocators
     "Ожидаемый результат: после клика на на кнопку «Для слабовидящих» происходит переход на страницу для слабовидящих."
 )
 @allure.tag("Главная страница", "Страница для слабовидящих")
-@allure.severity(allure.severity_level.NORMAL)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(

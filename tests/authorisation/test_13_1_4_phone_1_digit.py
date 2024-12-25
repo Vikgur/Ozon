@@ -2,7 +2,14 @@
 from tests.authorisation.test_auth_window_imports_options import *
 from tests.authorisation import phone_field
 
-
+@allure.description(
+    "Ожидаемый результат: поле отображает вводимую цифру, после клика на кнопку «Войти» появляется ошибка «Некорректный формат телефона» и окно ожидания отправленного смс кода не открывается. "
+)
+@allure.label("Автор тест-кейса", "Виктор Гурко")
+@allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
+@allure.testcase(
+    "Ozon-13.1.4", name="Ввести одно число «1»"
+)
 def test_1_digit():
     # Создать объект класса PhoneField.
     field = phone_field.PhoneField()

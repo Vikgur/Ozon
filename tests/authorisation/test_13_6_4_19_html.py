@@ -5,6 +5,14 @@ from tests.authorisation.test_auth_window_imports_options import *
 from tests.authorisation.test_email_window_check import email_window_check
 
 
+@allure.description(
+    "Ожидаемый результат: в отдельную директорию скачан html-код страницы авторизации для проверки на наличие комментариев и скрытых передаваемых инпутов."
+)
+@allure.label("Автор тест-кейса", "Виктор Гурко")
+@allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
+@allure.testcase(
+    "Ozon-13.6.4.19", name="Скачать html страницы"
+)
 def test_html():
     # Открыть окно "Войдите по почте".
     email_window_check()

@@ -23,10 +23,10 @@ from authorisation_page_check import authorisation_page_check
     "Страница корзины",
     "Страница авторизации",
 )
-@allure.severity(allure.severity_level.CRITICAL)
+@allure.severity(allure.severity_level.BLOCKER)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.issue("Ozon-666", name="Не открывается страница авторизации")
+@allure.issue("Ozon-bag-tracker-666", name="Не открывается страница авторизации")
 @allure.testcase("Ozon-12", name="Тест-сессия на основе тура «неуверенного покупателя»")
 def test_session():
     # Создать объект класса ActionChains.

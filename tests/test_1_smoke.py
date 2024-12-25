@@ -12,10 +12,10 @@ from authorisation_page_check import authorisation_page_check
     "Ожидаемый результат: товар успешно добавится в корзину, но при попытке перейти к оформлению покупки пользователь попадет на страницу авторизации."
 )
 @allure.tag("Главная страница", "Страница деталировки", "Страница авторизации")
-@allure.severity(allure.severity_level.CRITICAL)
+@allure.severity(allure.severity_level.BLOCKER)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.issue("Ozon-666", name="Не открывается страница авторизации")
+@allure.issue("Ozon-bag-tracker-666", name="Не открывается страница авторизации")
 @allure.testcase(
     "Ozon-1", name="Smoke тест — проверка работоспособности основного функционала"
 )

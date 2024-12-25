@@ -8,6 +8,11 @@ from tests.authorisation.test_email_window_check import email_window_check
 from tests.authorisation import email_window_asserts
 
 
+@allure.description(
+    "Тесты: 13.6.4.7, 13.6.4.8"
+)
+@allure.label("Автор тест-кейса", "Виктор Гурко")
+@allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 # Создать функцию клика на кнопку "Войти" и проверки ошибки "Заполните почту".
 def click_and_check():
     # Создать объект класса EmailWindow.

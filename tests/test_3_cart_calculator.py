@@ -10,7 +10,6 @@ from main_detail_cart import MainDetailCart
     "Ожидаемый результат: Сумма общей цены с Ozon Картой за все единицы товара 1 с общей ценой с Ozon Картой за все единицы товара 2 должна быть равна итоговой сумме в корзине с Ozon Картой. "
 )
 @allure.tag("Главная страница", "Страница деталировки", "Страница корзины")
-@allure.severity(allure.severity_level.CRITICAL)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(
