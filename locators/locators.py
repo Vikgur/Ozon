@@ -13,8 +13,8 @@ class MainPageLocators(MainPageAuthorisationIconLocators):
         "xpath",
         "//span[normalize-space(.)='Товары нарасхват']",
     )
-    MAIN_PRODUCT_1_LOCATOR = ("xpath", "(//div[@class='vi2_23'])[1]")
-    MAIN_PRODUCT_2_LOCATOR = ("xpath", "(//div[@class='vi2_23'])[2]")
+    MAIN_PRODUCT_1_LOCATOR = ("xpath", "(//div[@class='si1_23'])[1]")
+    MAIN_PRODUCT_2_LOCATOR = ("xpath", "(//div[@class='si1_23'])[2]")
     MAIN_CURRENCY_LOCATOR = ("xpath", "//button[@data-widget='selectedCurrency']")
     MAIN_ORDER_LIST_LOCATOR = ("xpath", "//a[@href='/my/orderlist']")
 
@@ -138,14 +138,14 @@ class AuthorisationPageLocators(object):
 # Локаторы всплывающих уведомлений.
 class AllertsLocators(object):
     ACCEPT_ALLERT_COOKIE_LOCATOR = ("xpath", "//button[normalize-space(.)='ОК']")
-    SKIP_ALLERT_GEOLOCATION_LOCATOR = (
-        "xpath",
-        "//button[normalize-space(.)='Пропустить']",
-    )
-    VISIBILITY_ALLERT_GEOLOCATION_LOCATOR = (
-        "xpath",
-        "//span[@class='tsBodyControl500Medium']",
-    )
+    # SKIP_ALLERT_GEOLOCATION_LOCATOR = (
+    #     "xpath",
+    #     "//button[normalize-space(.)='Не сейчас']",
+    # )
+    # VISIBILITY_ALLERT_GEOLOCATION_LOCATOR = (
+    #     "xpath",
+    #     "//span[@class='tsBodyControl500Medium']",
+    # )
     VISIBILITY_ALLERT_COOKIE_LOCATOR = ("xpath", "//button[normalize-space(.)='ОК']")
 
 

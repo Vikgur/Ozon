@@ -5,37 +5,21 @@ from imports_options import *
 from scrolls import Scrolls
 from page_elements.MainPage import MainPage
 from page_elements.DetailPage import DetailPageBuyOneClick
-from page_elements.AuthorisationPage import AuthorisationPage
+from authorisation_page_check import authorisation_page_check
 
 
-# Создать функцию проверки открытия страницы авторизации.
-def authorisation_page_check():
-
-    # Создать локатор айфрейма.
-    FIELD_IFRAME_LOCATOR = ("xpath", "//iframe[@id='authFrame']")
-
-    # Переключить драйвер на айфрейм.
-    driver.switch_to.frame("authFrame")
-
-    # После перехода на страницу авторизации
-    # создать объект страницы авторизации класса AuthorisationPage.
-    authorisation_page = AuthorisationPage(driver)
-
-    # Проверить через assert переход на страницу авторизации.
-    assert (
-        authorisation_page.VISIBILITY_TEXT_PHONE.text == "Введите номер телефона"
-    ), "Переход на страницу Авторизация не осуществлен :-("
-
-    # Проверить через print переход на страницу авторизации.
-    if authorisation_page.VISIBILITY_TEXT_PHONE.text == "Введите номер телефона":
-        print("Страница авторизации успешно открылась!")
-    else:
-        print("Страница авторизации не открыта :-(")
-
-
-# Выполнить Smoke.
-if __name__ == "__main__":
-
+@allure.description(
+    "Ожидаемый результат: товар успешно добавится в корзину, но при попытке перейти к оформлению покупки пользователь попадет на страницу авторизации."
+)
+@allure.tag("Главная страница", "Страница деталировки", "Страница авторизации")
+@allure.severity(allure.severity_level.CRITICAL)
+@allure.label("Автор тест-кейса", "Виктор Гурко")
+@allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
+@allure.issue("Ozon-666", name="Не открывается страница авторизации")
+@allure.testcase(
+    "Ozon-1", name="Smoke тест — проверка работоспособности основного функционала"
+)
+def test_smoke():
     # Создать объект класса ActionChains.
     action = ActionChains(driver)
 
@@ -75,6 +59,6 @@ if __name__ == "__main__":
     # Проверить переход на страницу авторизации.
     authorisation_page_check()
 
-    driver.quit()
-
     print("ТЕСТ ПРОЙДЕН УСПЕШНО!")
+
+    driver.quit()

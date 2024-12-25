@@ -11,14 +11,14 @@ class Allerts(object):
         self.ACCEPT_ALLERT_COOKIE = driver.find_element(
             *AllertsLocators.ACCEPT_ALLERT_COOKIE_LOCATOR
         )
+        # # Кнопка "ОК" принятия всплывающего аллерта о куках.
+        # self.SKIP_ALLERT_GEOLOCATION = driver.find_element(
+        #     *AllertsLocators.SKIP_ALLERT_GEOLOCATION_LOCATOR
+        # )
         # Кнопка "ОК" принятия всплывающего аллерта о куках.
-        self.SKIP_ALLERT_GEOLOCATION = driver.find_element(
-            *AllertsLocators.SKIP_ALLERT_GEOLOCATION_LOCATOR
-        )
-        # Кнопка "ОК" принятия всплывающего аллерта о куках.
-        self.VISIBILITY_ALLERT_GEOLOCATION = driver.find_element(
-            *AllertsLocators.VISIBILITY_ALLERT_GEOLOCATION_LOCATOR
-        )
+        # self.VISIBILITY_ALLERT_GEOLOCATION = driver.find_element(
+        #     *AllertsLocators.VISIBILITY_ALLERT_GEOLOCATION_LOCATOR
+        # )
         # Кнопка "ОК" принятия всплывающего аллерта о куках.
         self.VISIBILITY_ALLERT_COOKIE = driver.find_element(
             *AllertsLocators.VISIBILITY_ALLERT_COOKIE_LOCATOR
@@ -27,5 +27,5 @@ class Allerts(object):
     def getAcceptAllertCookie(self):
         return self.ACCEPT_ALLERT_COOKIE
 
-    def getSkipAllertGeolocation(self):
-        return self.SKIP_ALLERT_GEOLOCATION
+    # def getSkipAllertGeolocation(self):
+    #     return self.SKIP_ALLERT_GEOLOCATION

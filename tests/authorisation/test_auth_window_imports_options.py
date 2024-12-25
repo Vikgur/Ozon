@@ -7,7 +7,7 @@ from page_elements.MainPageAuthorisationWindow import (
     MainPageAuthorisationWindow,
     MainPageAuthorisationWindowLocators,
 )
-from tests.test_1_smoke import authorisation_page_check
+from authorisation_page_check import authorisation_page_check
 
 
 # Создать объект класса ActionChains.
