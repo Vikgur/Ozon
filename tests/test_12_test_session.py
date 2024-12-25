@@ -12,17 +12,22 @@ from page_elements.CartPageProducts import CartPageOneProduct, CartPageDeleteCon
 from locators.locators import CatalogPageCleanerLocators
 from authorisation_page_check import authorisation_page_check
 
+
 @allure.description(
     "Ожидаемый результат: товар успешно добавится в корзину и при попытке перейти к оформлению покупки будет произведен переход на страницу авторизации."
 )
-@allure.tag("Главная страница", "Страница каталога", "Страница деталировки", "Страница корзины", "Страница авторизации")
+@allure.tag(
+    "Главная страница",
+    "Страница каталога",
+    "Страница деталировки",
+    "Страница корзины",
+    "Страница авторизации",
+)
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.issue("Ozon-666", name="Не открывается страница авторизации")
-@allure.testcase(
-    "Ozon-12", name="Тест-сессия на основе тура «неуверенного покупателя»"
-)
+@allure.testcase("Ozon-12", name="Тест-сессия на основе тура «неуверенного покупателя»")
 def test_session():
     # Создать объект класса ActionChains.
     action = ActionChains(driver)

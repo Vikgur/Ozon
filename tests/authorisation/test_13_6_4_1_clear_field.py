@@ -4,43 +4,45 @@ from tests.authorisation.test_auth_window_imports_options import *
 from page_elements.MainPageAuthorisationEmailWindow import (
     MainPageAuthorisationEmailWindow,
 )
-from tests.authorisation.test_13_6_1_email_back import email_window_check
+from tests.authorisation.test_email_window_check import email_window_check
 
-# Открыть окно "Войдите по почте".
-email_window_check()
 
-# Создать объект окна "Войдите по почте"
-# класса MainPageAuthorisationEmailWindow.
-email_window = MainPageAuthorisationEmailWindow(driver)
+def test_clear_field():
+    # Открыть окно "Войдите по почте".
+    email_window_check()
 
-# Кликнуть на поле ввода и ввести данные.
-(
-action.click(email_window.INPUT_FIELD)
-.pause(1)
-.send_keys("йцукен23456789")
-.perform()
-)
-time.sleep(2)
+    # Создать объект окна "Войдите по почте"
+    # класса MainPageAuthorisationEmailWindow.
+    email_window = MainPageAuthorisationEmailWindow(driver)
 
-# Создать переменную локатора кнопки очистки поля ввода "х".
-CLEAR_FIELD_LOCATOR = ("xpath", "//div[@class='f019-b a2019-a']")
+    # Кликнуть на поле ввода и ввести данные.
+    (
+    action.click(email_window.INPUT_FIELD)
+    .pause(1)
+    .send_keys("йцукен23456789")
+    .perform()
+    )
+    time.sleep(2)
 
-# Создать переменную элемента кнопки очистки поля ввода "х".
-CLEAR_FIELD = driver.find_element(*CLEAR_FIELD_LOCATOR)
+    # Создать переменную локатора кнопки очистки поля ввода "х".
+    CLEAR_FIELD_LOCATOR = ("xpath", "//div[@class='f019-b a2019-a']")
 
-# Кликнуть на кнопку очистки поля ввода "х".
-wait.until(EC.element_to_be_clickable(CLEAR_FIELD)).click()
-time.sleep(2)
+    # Создать переменную элемента кнопки очистки поля ввода "х".
+    CLEAR_FIELD = driver.find_element(*CLEAR_FIELD_LOCATOR)
 
-# Проверить через assert, что поле ввода пустое.
-assert len(driver.find_elements(*CLEAR_FIELD_LOCATOR)) == 0, "Поле ввода не пустое :-("
+    # Кликнуть на кнопку очистки поля ввода "х".
+    wait.until(EC.element_to_be_clickable(CLEAR_FIELD)).click()
+    time.sleep(2)
 
-# Проверить через print, что поле ввода пустое.
-if len(driver.find_elements(*CLEAR_FIELD_LOCATOR)) == 0:
-    print("Поле ввода очистилось!")
-else:
-    print("Поле ввода не пустое :-(")
+    # Проверить через assert, что поле ввода пустое.
+    assert len(driver.find_elements(*CLEAR_FIELD_LOCATOR)) == 0, "Поле ввода не пустое :-("
 
-print("ТЕСТ ПРОЙДЕН УCПЕШНО!")
+    # Проверить через print, что поле ввода пустое.
+    if len(driver.find_elements(*CLEAR_FIELD_LOCATOR)) == 0:
+        print("Поле ввода очистилось!")
+    else:
+        print("Поле ввода не пустое :-(")
 
-driver.quit()
+    print("ТЕСТ ПРОЙДЕН УCПЕШНО!")
+
+    driver.quit()
