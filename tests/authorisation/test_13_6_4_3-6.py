@@ -9,7 +9,6 @@ from tests.authorisation import email_window_asserts
 
 
 @allure.description("Тесты: 13.6.4.3, 13.6.4.4, 13.6.4.5, 13.6.4.6")
-@allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 # Создать функцию клика на кнопку "Войти" и проверки ошибки "Не можем найти
 # аккаунт с этой почтой. Попробуйте ввести другую или войти по номеру телефона.".

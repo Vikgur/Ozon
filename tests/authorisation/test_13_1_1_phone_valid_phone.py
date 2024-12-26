@@ -6,11 +6,8 @@ from tests.authorisation import phone_field
 @allure.description(
     "Ожидаемый результат: поле отображает вводимые цифры и после клика на кнопку «Войти» открывается окно ожидания отправленного смс кода."
 )
-@allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.testcase(
-    "Ozon-13.1.1", name="Ввести валидный номер телефона «9999999999»"
-)
+@allure.testcase("Ozon-13.1.1", name="Ввести валидный номер телефона «9999999999»")
 def test_valid_phone():
     # Создать объект класса PhoneField.
     field = phone_field.PhoneField()
@@ -25,4 +22,3 @@ def test_valid_phone():
     print("ТЕСТ ПРОЙДЕН УПЕШНО!")
 
     driver.quit()
-

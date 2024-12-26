@@ -29,44 +29,41 @@ class CatalogPageCleaner(object):
         # Фильтр "Бренд".
         self.FILTER_BRAND = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_BRAND_LOCATOR
-        )   
+        )
         # Фильтр "Бренд" Xiaomi.
         self.FILTER_BRAND_XIAOMI = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_BRAND_XIAOMI_LOCATOR
-        )           
+        )
         # Фильтр "Цена".
         self.FILTER_PRICE = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_PRICE_LOCATOR
-        )          
+        )
         # Фильтр "Цена" поле ввода "от".
         self.FILTER_PRICE_INPUT_FROM = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_PRICE_INPUT_FROM_LOCATOR
-        )    
+        )
         # Фильтр "Цена" поле ввода "до".
         self.FILTER_PRICE_INPUT_TO = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_PRICE_INPUT_TO_LOCATOR
-        )    
+        )
         # Фильтр "Оригинальный товар".
         self.FILTER_ORIGINAL = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_ORIGINAL_LOCATOR
-        )    
+        )
         # Фильтр "Вид пылесборника".
         self.FILTER_DUST_COLLECTOR = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_DUST_COLLECTOR_LOCATOR
-        )  
+        )
         # Чек-бокс "Контейнер" фильтра "Вид пылесборника".
         self.FILTER_DUST_CHECKBOX_CONTAINER = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_DUST_CHECKBOX_CONTAINER_LOCATOR
-        )                  
+        )
         # Чек-бокс "Аквафильтр" фильтра "Вид пылесборника".
         self.FILTER_DUST_CHECKBOX_AQUA = driver.find_element(
             *CatalogPageCleanerLocators.FILTER_DUST_CHECKBOX_AQUA_LOCATOR
-        ) 
+        )
         # Сортировка.
-        self.SORTED = driver.find_element(
-            *CatalogPageCleanerLocators.SORTED_LOCATOR
-        )          
-        
+        self.SORTED = driver.find_element(*CatalogPageCleanerLocators.SORTED_LOCATOR)
 
     def getFilterRobotCleaner(self):
         return self.FILTER_ROBOT_CLEANER

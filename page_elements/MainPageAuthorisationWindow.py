@@ -34,13 +34,9 @@ class MainPageAuthorisationWindow(object):
         self.EMAIL_SIGN_IN = driver.find_element(
             *MainPageAuthorisationWindowLocators.EMAIL_SIGN_IN_LOCATOR
         )
-        
 
     def getCodeList(self):
         return self.CODE_LIST
 
     def getPhoneInputField(self):
         return self.PHONE_INPUT_FIELD
-
-    def getEnterButton(self):
-        return self.ENTER_BUTTON

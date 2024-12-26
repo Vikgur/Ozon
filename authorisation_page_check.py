@@ -4,6 +4,7 @@ sys.path.append(sys.path[0] + "/..")
 from imports_options import *
 from page_elements.AuthorisationPage import AuthorisationPage
 
+
 # Создать функцию проверки открытия страницы авторизации.
 def authorisation_page_check():
 

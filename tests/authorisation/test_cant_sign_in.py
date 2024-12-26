@@ -28,6 +28,16 @@ def cant_sign_in():
     else:
         print('Переход на окно "Выберите причину" не осуществлен :-(')
 
+    # Создать переменную элемента кнопки "Вернуться на главный экран".
+    BACK_TO_AUTHORISATION_WINDOW = driver.find_element(
+        "xpath", "//button[normalize-space(.)='Вернуться на главный экран']"
+    ).text
+
+    # Проверить через assert наличие.
+    assert (
+        BACK_TO_AUTHORISATION_WINDOW.text == "Вернуться на главный экран"
+    ), 'Кнопка "Вернуться на главный экран" отсутствует'
+
     print("ТЕСТ ПРОЙДЕН УCПЕШНО!")
 
     driver.quit()

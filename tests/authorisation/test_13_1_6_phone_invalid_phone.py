@@ -6,7 +6,6 @@ from tests.authorisation import phone_field
 @allure.description(
     "Ожидаемый результат: поле отображает вводимые символы, после клика на кнопку «Войти» появляется ошибка «Некорректный формат телефона» и окно ожидания отправленного смс кода не открывается."
 )
-@allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase("Ozon-13.1.6", name="Ввести невалидный номер телефона «1111111111»")
 def test_invalid_phone():

@@ -22,7 +22,6 @@ class MainPageAuthorisationEmailWindow(object):
         self.LOGIN_BUTTON = driver.find_element(
             *MainPageAuthorisationEmailWindowLocators.LOGIN_BUTTON_LOCATOR
         )
-        
 
     def getEmailWindow(self):
         return self.EMAIL_WINDOW

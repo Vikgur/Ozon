@@ -26,12 +26,10 @@ class MainPage(object):
         # Иконка "Мои Заказы" в виде коробочки.
         self.MAIN_ORDER_LIST = driver.find_element(
             *MainPageLocators.MAIN_ORDER_LIST_LOCATOR
-        )    
+        )
         # Поле ввода в поисковую строку.
-        self.MAIN_SEARCH = driver.find_element(
-            *MainPageLocators.MAIN_SEARCH_LOCATOR
-        )              
-        
+        self.MAIN_SEARCH = driver.find_element(*MainPageLocators.MAIN_SEARCH_LOCATOR)
+
     def getMainFirstCategory(self):
         return self.MAIN_FIRST_CATEGORY
 
@@ -41,14 +39,8 @@ class MainPage(object):
     def getMainProduct2(self):
         return self.MAIN_PRODUCT_2
 
-    def getMainFaceIcon(self):
-        return self.MAIN_FACE_ICON
-
-    def getMainAccessibility(self):
-        return self.MAIN_ACCESSIBILITY
-    
     def getMainCurrency(self):
         return self.MAIN_CURRENCY
- 
+
     def getMainSearch(self):
         return self.MAIN_SEARCH

@@ -9,7 +9,7 @@ class MainPageСurrencyDropdown(object):
         # Доллар США.
         self.MAIN_CURRENCY_DROPDOWN_USD = driver.find_element(
             *MainPageCurrencyDropdownLocators.MAIN_CURRENCY_DROPDOWN_USD_LOCATOR
-        )      
-        
+        )
+
     def getMainCurrencyDropdownUsd(self):
         return self.MAIN_CURRENCY_DROPDOWN_USD

@@ -57,12 +57,8 @@ def filling_ticket_all_fields():
     # Создать объект выпадающей опции "Даты" класса OzonTravelDates.
     ozon_page_dates = OzonTravelDates(driver)
 
-    # Выбрать месяц Март.
-    action.click(ozon_page_dates.INPUT_DATE_MONTH_MARCH).perform()
-    time.sleep(2)
-
-    # Выбрать дату 1 Марта.
-    action.click(ozon_page_dates.INPUT_DATE_DAY_1).perform()
+    # Выбрать дату.
+    action.click(ozon_page_dates.INPUT_DATE_DAY).perform()
     time.sleep(2)
 
     # Создать переменную локатора кнопки "Обратный билет не нужен".

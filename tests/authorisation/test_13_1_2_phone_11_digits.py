@@ -6,7 +6,6 @@ from tests.authorisation import phone_field
 @allure.description(
     "Ожидаемый результат: поле отображает только первые 10 цифр, после клика на кнопку «Войти» открывается окно ожидания отправленного смс кода."
 )
-@allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase("Ozon-13.1.2", name="Ввести 11 чисел «99999999999»")
 def test_11_digits():

@@ -9,12 +9,11 @@ import requests
     "Ожидаемый результат: получен промежуток времени в виде разницы, прошедший между отправкой запроса и получением ответа в режиме работы браузера со включенным расширением."
 )
 @allure.tag("Главная страница")
-@allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.testcase(
     "Ozon-9", name="9. Тестирование производительности при любом запущенном расширении"
 )
-def extension_page_load_time():
+def test_extension_page_load_time():
     # Установить необходимое расширение.
     chrome_options.add_extension("Tests/Extensions/adblock.crx")
 

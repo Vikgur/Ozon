@@ -13,7 +13,6 @@ from authorisation_page_check import authorisation_page_check
 )
 @allure.tag("Главная страница", "Страница деталировки", "Страница авторизации")
 @allure.severity(allure.severity_level.BLOCKER)
-@allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 @allure.issue("Ozon-bag-tracker-666", name="Не открывается страница авторизации")
 @allure.testcase(

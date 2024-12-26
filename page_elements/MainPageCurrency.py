@@ -17,6 +17,6 @@ class MainPageСurrency(object):
 
     def getMainCurrencyVisibility(self):
         return self.MAIN_CURRENCY_VISIBILITY
-    
+
     def getMainCurrencyDropdown(self):
         return self.MAIN_CURRENCY_DROPDOWN

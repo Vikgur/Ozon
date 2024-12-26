@@ -13,8 +13,8 @@ class MainPageLocators(MainPageAuthorisationIconLocators):
         "xpath",
         "//span[normalize-space(.)='Товары нарасхват']",
     )
-    MAIN_PRODUCT_1_LOCATOR = ("xpath", "(//div[@class='si1_23'])[1]")
-    MAIN_PRODUCT_2_LOCATOR = ("xpath", "(//div[@class='si1_23'])[2]")
+    MAIN_PRODUCT_1_LOCATOR = ("xpath", "(//div[@class='s4i_23'])[1]")
+    MAIN_PRODUCT_2_LOCATOR = ("xpath", "(//div[@class='s4i_23'])[2]")
     MAIN_CURRENCY_LOCATOR = ("xpath", "//button[@data-widget='selectedCurrency']")
     MAIN_ORDER_LIST_LOCATOR = ("xpath", "//a[@href='/my/orderlist']")
 
@@ -27,7 +27,7 @@ class MainPageBottomLocators(object):
 # Локаторы главной страницы модального окна "Валюта".
 class MainPageCurrencyLocators(object):
     MAIN_CURRENCY_VISIBILITY_LOCATOR = ("xpath", "//span[normalize-space(.)='Валюта']")
-    MAIN_CURRENCY_DROPDOWN_LOCATOR = ("xpath", "//input[@class='e3020-b0']")
+    MAIN_CURRENCY_DROPDOWN_LOCATOR = ("xpath", "//input[@title='Российский рубль']")
 
 
 # Локаторы главной страницы модального окна "Валюта".
@@ -37,7 +37,7 @@ class MainPageCurrencyDropdownLocators(object):
 
 # Локаторы главной страницы иконки "лицо" с выпадающим списком.
 class MainPageFaceIconLocators(object):
-    MAIN_FACE_ICON_LOCATOR = ("xpath", "(//div[@class='d4019-a'])[7]")
+    MAIN_FACE_ICON_LOCATOR = ("xpath", "//div[@data-widget='profileMenuAnonymous']")
     MAIN_FACE_ICON_SIGN_IN_LOCATOR = (
         "xpath",
         "//button[normalize-space(.)='Войти или зарегистрироваться']",
@@ -82,7 +82,7 @@ class DetailPageProductLocators(DetailPageLocators):
 
     PRODUCT_ADD_TO_CART_LOCATOR = (
         "xpath",
-        "(//button[@class='kl6_27 b2121-a0 b2121-b2 b2121-a4'])[2]",
+        "(//button[@class='jy8_27 b2121-a0 b2121-b2 b2121-a4'])[2]",
     )
     GO_TO_DESCRIPTION_LOCATOR = (
         "xpath",
@@ -151,7 +151,7 @@ class AccessibilityPageLocators(object):
 
 # Локаторы страницы каталога.
 class CatalogPageCleanerLocators(object):
-    ROBOT_CLEANER_FIRST_RESULT_LOCATOR = ("xpath", "(//div[@class='zi7_23'])[1]")
+    ROBOT_CLEANER_FIRST_RESULT_LOCATOR = ("xpath", "(//div[@class='xi2_23'])[1]")
     FILTER_ROBOT_CLEANER_LOCATOR = (
         "xpath",
         "//a[normalize-space(.)='Роботы-пылесосы']",
@@ -206,7 +206,7 @@ class CatalogPageCleanerLocators(object):
     )
     SORTED_LOCATOR = (
         "xpath",
-        "//input[@class='c149-a7 tsBody500Medium c149-a9']",
+        "//input[@class='c1410-a7 tsBody500Medium c1410-a9']",
     )
 
 
@@ -244,14 +244,14 @@ class MainPageAuthorisationEmailWindowLocators(object):
 
 # Локаторы Ozon Travel.
 class OzonTravelLocators(object):
-    INPUT_FROM_CLEAR_LOCATOR = ("xpath", "(//div[@class='abp5_39'])[1]")
+    INPUT_FROM_CLEAR_LOCATOR = ("xpath", "(//div[@class='a3pb_39'])[1]")
     INPUT_FROM_LOCATOR = ("xpath", "(//input[@type='text'])[1]")
     INPUT_TO_LOCATOR = ("xpath", "(//input[@type='text'])[2]")
     INPUT_DATE_LOCATOR = ("xpath", "(//input[@type='text'])[3]")
     INPUT_PASSENGERS_CLASS_LOCATOR = ("xpath", "(//input[@type='text'])[4]")
     FIND_TICKETS_BUTTON_LOCATOR = (
         "xpath",
-        "//button[@class='p5ba_39 abp6_39 b2121-a0 b2121-b5 b2121-b2']",
+        "//button[@class='apb4_39 ap4b_39 b2121-a0 b2121-b5 b2121-b2']",
     )
 
 
@@ -260,12 +260,10 @@ class OzonTravelDatesLocators(OzonTravelLocators):
     def __init__(self):
         super().__init__(self)
 
-    INPUT_DATE_MONTH_MARCH_LOCATOR = ("xpath", "//div[normalize-space(.)='Март 2025']")
-    INPUT_DATE_DAY_1_LOCATOR = (
+    INPUT_DATE_DAY_LOCATOR = (
         "xpath",
-        "(//div[@class='d4019-a hb5a_39' and normalize-space(.)='1'])[3]",
+        "(//div[@class='d4019-a ba2h_39' and normalize-space(.)='27'])[2]",
     )
-
 
 
 # Локаторы Ozon Travel поля "Пассажиры и класс".

@@ -2,8 +2,7 @@ import sys
 
 sys.path.append(sys.path[0] + "/..")
 from imports_options import *
-from page_elements.MainPage import MainPage
-from page_elements.MainPageFaceIcon import MainPageFaceIcon
+from page_elements.MainPageAuthorisationIcon import MainPageAuthorisationIcon
 from page_elements.Allerts import Allerts
 from locators.locators import MainPageFaceIconLocators
 
@@ -12,9 +11,7 @@ from locators.locators import MainPageFaceIconLocators
     "Ожидаемый результат: при наведение на «лицо» должен выпадать список кнопок: «Войти или зарегистрироваться» и «Личный кабинет». При клике на «Войти или зарегистрироваться» появляется модальное неблокирующее окно регистрации на текущей странице. При клике на «Личный кабинет» открывается страница личного кабинета."
 )
 @allure.tag("Главная страница")
-@allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
-@allure.issue("Ozon-666", name="Не открывается страница авторизации")
 @allure.testcase("Ozon-5", name="Тестирование выпадающих списков элементов")
 def test_dropdown():
     # Создать объект класса ActionChains.
@@ -32,17 +29,12 @@ def test_dropdown():
     wait.until(EC.element_to_be_clickable(allerts.ACCEPT_ALLERT_COOKIE)).click()
     time.sleep(3)
 
-    # После принятия куков создать объект
-    # главной страницы класса MainPage.
-    main_page = MainPage(driver)
+    # После принятия куков создать объект класса MainPageAuthorisationIcon.
+    main_page = MainPageAuthorisationIcon(driver)
 
     # Навести мышку на иконку "лицо" в шапке.
     action.move_to_element(main_page.MAIN_FACE_ICON).perform()
     time.sleep(2)
-
-    # После наведения мышки на иконку "лицо"
-    # создать объект класса MainPageFaceIcon.
-    main_page_face_icon = MainPageFaceIcon(driver)
 
     # Создать переменную кнопки "Войти или зарегистрироваться"
     # для проверки ее наличия в выпадающем списке/меню.
