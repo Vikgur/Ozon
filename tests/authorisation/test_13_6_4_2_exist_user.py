@@ -26,7 +26,7 @@ def test_exist_user():
     (
         action.click(email_window.INPUT_FIELD)
         .pause(1)
-        .send_keys("viktorgurko@gmail.com")
+        .send_keys("registered_on_ozon_email@gmail.com")
         .perform()
     )
     time.sleep(2)

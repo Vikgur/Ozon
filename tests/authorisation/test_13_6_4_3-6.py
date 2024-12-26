@@ -29,7 +29,6 @@ def click_and_check():
 
 
 @allure.description("Тесты: 13.6.4.3, 13.6.4.4, 13.6.4.5, 13.6.4.6")
-@allure.label("Автор тест-кейса", "Виктор Гурко")
 @allure.link("https://gitlab.com/Vikgur/ozon/", name="Тест-кейсы для Ozon")
 def test_from_3_till_6():
 
