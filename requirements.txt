@@ -1,0 +1,25 @@
+1. Для изоляции проекта установить venv
+python3 -m venv myvenv
+
+2. Активировать venv
+source myvenv/bin/activate
+
+3. Установить Selenium
+pip install selenium
+или
+pip3 install selenium
+
+4. Установить WebDriver_manager
+pip install webdriver_manager
+
+5. Установить Pytest
+pip install pytest
+
+6. Установить Requests
+pip install requests
+
+7. Установить для отчетов allure-pytest
+pip install allure-pytest
+Если система не видит allure, установить по инструкции:
+https://allurereport.org/docs/install/
+
